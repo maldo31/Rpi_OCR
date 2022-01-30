@@ -5,10 +5,11 @@ import os
 import cv2
 import xml.etree.ElementTree as xet
 from sklearn.model_selection import train_test_split
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
+import tensorflow.keras.preprocessing.image
 
-# df = pd.read_csv('labels.csv')
-# df.head()
+df = pd.read_csv('labels.csv')
+df.head()
+print(df)
 #
 # filename = df['filepath']
 
